@@ -1,0 +1,27 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: name-virtual-host-ingress
+spec:
+  rules:
+  - host: nginx.192.168.2.240.xip.io
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: nginx
+            port:
+              number: 80
+  - host: httpd.192.168.2.240.xip.io
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: httpd
+            port:
+              number: 80
+

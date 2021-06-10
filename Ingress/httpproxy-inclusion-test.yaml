@@ -1,0 +1,12 @@
+# httpproxy-inclusion-test.yaml
+---
+apiVersion: projectcontour.io/v1
+kind: HTTPProxy
+metadata:
+  name: blog
+  namespace: engineering
+spec:
+  routes:
+    - services:
+        - name: blog
+          port: 80
