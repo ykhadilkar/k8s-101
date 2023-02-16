@@ -1,4 +1,4 @@
-# MSK DevOpsDays 2021
+# Kubernetes 101
 
 ## Simple Kubernetes App Deployment
 [Sample App deployment yaml](https://github.com/ykhadilkar/msk-devopsdays-k8s/tree/main/Hello-World)
